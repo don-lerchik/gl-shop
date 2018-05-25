@@ -1,0 +1,327 @@
+html,body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0px;
+}
+body{
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+    background: #849d8f url("../gllacy/image/Background-image/Мороженко\ 1.png") 
+    no-repeat 50% 0;
+}
+.container {
+    width: 1145px;
+    margin: 0 auto;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local("Roboto Regular"),
+        url("../gllacy/fonts/web/roboto.woff") format("woff");
+}
+@font-face {
+    font-family: "RobotoMedium";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local("Roboto Regular"),
+        url("../gllacy/fonts/web/robotomedium.woff") format("woff");
+}
+.btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 70px;
+    color: #ffffff;
+    background: -webkit-linear-gradient(top, #f26843 , #e74b36);
+    font-weight: bold;
+    box-shadow: 1px 1px 5px 0 #201e1e;
+    outline: none;
+    
+}
+.btn:hover {
+    background: -webkit-linear-gradient(top, #f58669 , #ec6f5e);
+    box-shadow: 1px 1px 5px 0 #ac1000;
+    text-shadow:  2px 2px  5px #201e1e;
+    outline: none;
+}
+.btn:active {
+    background: -webkit-linear-gradient(top, #d84732 , #e1613e);
+    box-shadow:inset 2px 2px 1px 0 #952718;
+    text-shadow:  -2px -2px  5px #201e1e;
+    outline: none;
+}
+.link:hover {
+    color: #ffbc9e;
+}
+.link:active {
+    color: #ffbc9e
+}
+.index-logo  {
+    width: 680px;
+    margin:0 auto;
+    text-align: center;
+}
+.index-logo p {
+    color:#fcefd0;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-top: 265px;
+    margin-bottom: 25px;
+}
+.btn-give {
+    padding: 20px 35px;
+    font-size: 31px;
+    border-radius: 70px;
+}
+.stock {
+    display: flex;
+    justify-content: space-between;
+    margin-top:40px;
+
+}
+.stock-items {
+    width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+}
+.stock-items b {
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+.stock-items p {
+    font-size: 17px;
+    color: #ffffff;
+}
+.stock-1 {
+    background: url("../gllacy/image/Малиновый\ фон.jpg") no-repeat 50% 50%;
+}
+.stock-2 {
+    background: url("../gllacy/image/Шоколадный\ фон.jpg") no-repeat;
+}
+.get-stock{
+    font-size: 18px;
+    padding:15px 20px;
+    float: right;
+}
+.hit-place{
+    margin-top:40px;
+}
+.hits {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.hit {
+    width: 270px;
+    list-style-type: none;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+.hit::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top:5px;
+    left: 15px;
+
+    width: 60px;
+    height: 60px;
+    background-image: url("../gllacy/image/ХИТ\ 1.png");
+    background-repeat: no-repeat;
+}
+.hit:hover {
+    background-color: #a7b8ad;
+    border-radius: 5px;
+    border: 1px solid #c2cec7;
+    transform: scale(1.05);
+}
+.hit-price {
+    position: absolute;
+    top: 175px;
+    left: 0;
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.hit-description {
+    display: inline-block;
+    text-align: center;
+    font-family: "RobotoMedium",sans-serif;
+    color: #ffffff; 
+}
+.btn-review {
+    padding: 10px 25px;
+    margin: 10px;
+    display: none;
+    
+}
+.hit:hover .btn-review{
+   display: block;
+
+}
+.magazine-plus {
+    width: auto;
+    background: url(../gllacy/image/Вафля\ фон.jpg) no-repeat 50% 50%;
+    margin-top:30px;
+    padding:20px ;
+    border-radius: 25px;
+}
+.magazine-plus h2 {
+    font-family: "RobotoMedium",sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.plus-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.plus-list li {
+    width: 470px;
+    padding: 0;  
+    margin-left:75px;
+    margin-top: 25px ;
+    position: relative;
+}
+.plus-list li::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top:-18px;
+    left:-70px;
+
+    width: 50px;
+    height:50px;
+    background-image: url("../gllacy/image/sptite2/sprate.svg");
+    background-repeat: no-repeat;
+    background-position:0px 0px;
+}
+.plus-list li:nth-child(2)::before {
+    background-position:-564px 0px;
+}
+.plus-list li:nth-child(3)::before{
+    background-position: 0px -87px;
+}
+.plus-list li:last-child::before {
+    background-position: -564px -87px;
+}
+.index-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.magazine-post {
+    width: 520px;
+    padding: 20px;
+    border-radius: 25px;
+}
+.news {
+    background:url("../gllacy/image/Клубничный\ фон.jpg") no-repeat;
+}
+.spam {
+    background: url("../gllacy/image/Почтовый\ фон.jpg") no-repeat;
+    padding: 0;
+}
+.spam-content{
+    margin: 5px;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #f8f7f4;
+}
+.news p {
+    font-family: "RobotoMedium",sans-serif;
+    font-size: 16px;
+    color: #5a5a5a;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.news a {
+    display: inline-block;
+    width: 300px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.spam-content p {
+    font-size: 16px;
+    line-height: 22px;
+}
+.form-mail {
+    margin-top:30px;
+    margin-bottom: 15px;
+}
+.form-mail input {
+    width: 310px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.form-mail .btn {
+    font-size: 15px;
+    font-weight: bold;
+    padding:13px 20px;
+    box-shadow: none;
+    border-color: none;
+    
+}
+#map {
+    position: relative;
+    width: 1200px;
+    height: 430px;
+    margin: 0 auto;
+    background:url("../gllacy/image/Layer\ 3.jpg") no-repeat;
+    margin-top:40px;
+    text-align: right;
+}
+.magazine-contact {
+    display: inline-block;
+    width: 250px;
+    text-align: left;
+    margin: 65px 27px;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+.magazine-contact::before{
+    position: absolute;
+    content: "";
+    top: 140px;
+    left: 265px;
+    z-index: 1;
+    width: 200px;
+    height: 155px;
+    background: url("../gllacy/image/Пин.png") no-repeat;
+}
+.magazine-contact p {
+    font-size:14px;
+    width: 180px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.magazine-contact .btn {
+    font-size: 17px;
+    padding:10px 30px; 
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
