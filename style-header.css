@@ -208,9 +208,8 @@ ul.subb-search > li {
   border-radius: 5px;
   background: #fff;
   font-size:14px;
-  color: #999999;
   outline: none;
-    outline-offset: 0;
+ outline-offset: 0;
  
 }
 .search .input:focus {

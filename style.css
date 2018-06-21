@@ -8,8 +8,6 @@ body{
     font-size: 16px;
     line-height: 22px;
     color: #323232;
-    background: #849d8f url("../gllacy/image/Background-image/Мороженко\ 1.png") 
-    no-repeat 50% 0;
 }
 .container {
     width: 1145px;
@@ -35,6 +33,38 @@ body{
     src:
         local("Roboto Regular"),
         url("../gllacy/fonts/web/robotomedium.woff") format("woff");
+}
+@keyframes move_left {
+    0% {
+        transform: translateX(1299px);
+    }
+    80% {
+        transform: translateX(-50px);
+        
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+@keyframes move_rigth {
+    0% {
+        transform: translateX(-1299px);
+    }
+    80% {
+        transform: translateX(50px);
+        
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+@keyframes anime {
+	from {
+		transform: scale(1) ;
+	}
+	to {
+		transform: scale(1.1) ;
+	}
 }
 .btn {
     display: inline-block;
@@ -66,28 +96,108 @@ body{
 .link:active {
     color: #ffbc9e
 }
+
 .index-logo  {
     width: 680px;
     margin:0 auto;
+    padding-top: 380px;
     text-align: center;
 }
-.index-logo p {
+
+.back-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+    min-height: 2500px;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+}
+.back-image p{
+    display: inline-block;
+    width: 680px;
+    margin: 0;
+    margin-top: 380px;
+    text-align: center;
     color:#fcefd0;
     font-size: 60px;
     font-weight: bold;
     line-height: 60px;
-    margin-top: 265px;
-    margin-bottom: 25px;
+    text-shadow:2px 2px 2px #323232;
 }
 .btn-give {
+    display:block;
+    margin: 0 auto;
+    width: 210px;
     padding: 20px 35px;
     font-size: 31px;
     border-radius: 70px;
 }
+.btn-give:hover {
+    animation-name: anime;
+		/* имя кейфрейма для анимации */
+	animation-duration: 300ms;
+		/* длительность анимации */
+	animation-iteration-count: infinite;
+		/* количество повторений, в данном случае - бесконечно */
+	animation-direction: alternate;
+		/* проигрывать анимацию в прямом и в обратном порядке */
+	animation-timing-function: ease-in;
+}
+.back-image1 {
+    background: #849d8f url("../gllacy/image/Background-image/Мороженко\ 1.png") 
+    no-repeat 50% 0;
+}
+.back-image2 {
+    background: #8996a6 url("../gllacy/image/Background-image/Мороженко\ 1-1.jpg") 
+    no-repeat 50% 0;
+    z-index: -2;
+}
+.back-image3 {
+    background: #9d8b84 url("../gllacy/image/Background-image/Мороженко\ 1-2.jpg") 
+    no-repeat 50% 0;
+    z-index:-3;
+}
+.slider {
+    margin-top:400px;
+    position: relative;
+}
+.slider input[type=radio] {
+    display: none;
+}
+.slider-controls label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background-color: white;
+}
+
+.opacity {
+    display: block;
+    animation: move_left;
+    animation-duration: 2s; 
+}
+.opacity2 {
+    display: block;
+    animation: move_rigth;
+    animation-duration: 2s; 
+}
+
 .stock {
     display: flex;
     justify-content: space-between;
-    margin-top:40px;
+    margin-top: 50px;
 
 }
 .stock-items {
@@ -325,3 +435,4 @@ body{
     margin-top: 15px;
     margin-bottom: 5px;
 }
+

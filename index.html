@@ -78,10 +78,28 @@
         </div>
     </header>
     <main class="container">
-        <div class="index-logo">
-            <p>Крем-брюле и пломбир с малиновым джемом</p>
-            <a class="btn btn-give" href="#">Давайте оба!</a>
+        <div class="slider">
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <input type="radio" id="btn-3" name="toggle">
+            <div class="slider-controls">
+                <label for="btn-1" class="link1"></label>
+                <label for="btn-2" class="link2"></label>
+                <label for="btn-3" class="link3"></label>
+            </div>
         </div>
+        <div class="background-image">
+            <div class="back-image back-image1">
+                <p>Крем-брюле и пломбир с малиновым джемом</p>
+            </div>
+            <div class="back-image back-image2">
+                <p>Шоколадный пломбир и лимонный сорбет</p>
+            </div>
+            <div class="back-image back-image3">
+                <p>Пломбир с помадкой и клубничный щербет</p>
+            </div>
+        </div>
+        <a class="btn btn-give" href="#">Давайте оба!</a>
         <section class="stock">
             <div class="stock-items stock-1">
                 <b class="stock-name">Малинка даром!</b>
@@ -197,8 +215,6 @@
         </section>
     </footer> 
     <!-- <script src="../gllacy/mapsscript.js"></script> -->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuF30gz7z8SSeMH_Dpf6gCwkh0a3_En-o&callback=initMap">
-    </script>
+    <script src="../gllacy/script-backimage.js"></script>
 </body>
 </html>
